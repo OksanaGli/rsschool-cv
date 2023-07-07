@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>CV</title>
+  </head>
+  <body>
+    <header>
+      <img class="#" src="./images/avatar.jpg" width="200" height="200" alt="Avatar">
+      <h1>Oksana Glizer</h1>
+      <p>Junior Frontend Developer</p>
+    </header>
+    <main>
+      <section>
+        <h2>Contacts</h2>
+        <ul>
+          <li>
+            <p>Location: Russia, Saint-Petersburg</p>
+          </li>
+          <li>
+            <p>E-mail: oksanochkalapa@gmail.com</p>
+          </li>
+          <li>
+            <p>Phone: +7 905-285-50-45</p>
+          </li>
+          <li>
+            <p>GitHub: https://github.com/OksanaGli</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>About me</h2>
+        <p>Today I have interest to develop in the field of IT technologies. 
+           The idea to try to learn frontend development came about two years ago. 
+           It has been an interesting and exciting journey, that I hope will continue. 
+           Unfortunately, so far I have not had the opportunity to try my hand at real projects. 
+           But every day I learn something new. I like to study, gain knowledge and skills that will help me get my new job.
+        </p>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <p>HTML/CSS</p>
+          </li>
+          <li>
+            <p>JavaScript (Basics)</p>
+          </li>
+          <li>
+            <p>Git/GitHub</p>
+          </li>
+          <li>
+            <p>VS Code</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Code Example</h2>
+        <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
+           The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000
+        </p>
+        <pre>
+          <code>
+            const getSum = (n) => {
+                const number = [...Array(n).keys()];
+                return number.reduce((acc, item) => {
+                  if (item % 3 === 0 || item % 5 === 0) {
+                    return acc + item;
+                  } else {
+                    return acc;
+                  }
+                }, 0);
+              };
+          </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <h3>University</h3>
+        <ul>
+          <li>
+            <p>Peter the Great St. Petersburg Polytechnic University</p>
+          </li>
+        </ul>
+        <h3>Courses</h3>
+        <ul>
+          <li>
+            <p>HTML/CSS. Professional Website Coding</p>
+          </li>
+          <li>
+            <p>HTML/CSS. Adaptive layout and automation</p>
+          </li>
+          <li>
+            <p>JavaScript. Professional development of web-interfaces</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Languages</h2>
+        <ul>
+          <li>
+            <p>Russian: Native speaker</p>
+          </li>
+          <li>
+            <p>English: A2</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <a>
+        <img src="./images/icons/github-logo.svg" width="26" height="26" alt="Github-logo">
+        <p>GitHub</p>
+      </a>
+      <p>2023</p>
+      <a>
+        <img src="#" width="#" height="#" alt="Rsschool-logo">
+      </a>
+    </footer>
+  </body>
+</html>
