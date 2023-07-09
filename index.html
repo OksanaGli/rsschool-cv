@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="image__wrapper">
+          <img class="image__avatar" src="./images/avatar.jpg" width="300" height="360" alt="Avatar">
+        </div>
+        <div class="header__info">
+          <h1 class="header__title">Oksana Glizer</h1>
+          <p class="header__description">Junior Frontend Developer</p>
+        </div>
+      </header>
+      <main class="main">
+        <div class="left__column__container">
+          <section class="contacts">
+            <h2 class="contacts__title">Contacts</h2>
+            <ul class="contacts__list reset__list">
+              <li class="contacts__item contacts__place">
+                <p class="contacts__description">Russia, Saint-Petersburg</p>
+              </li>
+              <li class="contacts__item contacts__mail">
+                <a class="contacts__link" href="mailto:oksanochkalapa@gmail.com" target="_blank">
+                  <p class="contacts__description">oksanochkalapa@gmail.com</p>
+                </a>
+              </li>
+              <li class="contacts__item contacts__phone">
+                <a class="contacts__link" href="tel:+79052855045" target="_blank">
+                  <p class="contacts__description">+7 905-285-50-45</p>
+                </a>
+              </li>
+              <li class="contacts__item contacts__item__link">
+                <a class="contacts__link" href="https://github.com/OksanaGli" target="_blank">
+                  <p class="contacts__description">GitHub</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="skills">
+            <h2 class="skills__title">Skills</h2>
+            <ul class="skills__list reset__list">
+              <li class="skills__item">
+                <p>HTML/CSS</p>
+              </li>
+              <li class="skills__item">
+                <p>JavaScript (Basics)</p>
+              </li>
+              <li class="skills__item">
+                <p>Git/GitHub</p>
+              </li>
+              <li class="skills__item">
+                <p>VS Code</p>
+              </li>
+            </ul>
+          </section>
+          <section class="languages">
+            <h2 class="languages__title">Languages</h2>
+            <ul class="languages__list reset__list">
+              <li class="languages__item">
+                <p>Russian: Native speaker</p>
+              </li>
+              <li class="languages__item">
+                <p>English: A2</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="right__column__container">
+          <section class="about">
+            <h2 class="about__title">About me</h2>
+            <p class="about__description">Today I have interest to develop in the field of IT technologies. 
+              The idea to try to learn frontend development came about two years ago. 
+              It has been an interesting and exciting journey, that I hope will continue. 
+              Unfortunately, so far I have not had the opportunity to try my hand at real projects. 
+              But every day I learn something new. I like to study, gain knowledge and skills that will help me get my new job.
+            </p>
+          </section>
+          <div class="block__wrapper">
+            <section class="education">
+              <h2 class="education__title">Education</h2>
+              <h3 class="university">University</h3>
+              <ul class="university__list reset__list">
+                <li class="university__item">
+                  <p>Peter the Great St. Petersburg Polytechnic University</p>
+                </li>
+              </ul>
+              <h3 class="courses">Courses</h3>
+              <a class="courses__link" href="https://htmlacademy.ru/" target="_blank">HTML-academy:</a>
+              <ul class="courses__list reset__list">
+                <li class="courses__item">
+                  <p>HTML/CSS. Professional Website Coding</p>
+                </li>
+                <li class="courses__item">
+                  <p>HTML/CSS. Adaptive layout and automation</p>
+                </li>
+                <li class="courses__item">
+                  <p>JavaScript. Professional development of web-interfaces</p>
+                </li>
+              </ul>
+            </section>
+            <section class="code__example">
+              <h2 class="code__example__title">Code Example</h2>
+              <p class="code__example__description">If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
+                 The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000
+              </p>
+              <pre class="code__block">
+                <code>
+                  const getSum = (n) => {
+                      const number = [...Array(n).keys()];
+                      return number.reduce((acc, item) => {
+                        if (item % 3 === 0 || item % 5 === 0) {
+                          return acc + item;
+                        } else {
+                          return acc;
+                        }
+                      }, 0);
+                    };
+                </code>
+              </pre>
+            </section> 
+          </div>
+        </div>      
+      </main>
+      <footer class="footer">
+        <a class="github__link" href="https://github.com/OksanaGli" target="_blank">
+          <img src="./images/icons/github-logo.svg" width="26" height="26" alt="Github-logo">
+          <p class="github__description">GitHub</p>
+        </a>
+        <p class="footer_data">© 2023</p>
+        <a class="school__link" href="https://rs.school/" target="_blank">
+          <img src="./images/icons/rs_school.svg" width="100" height="60" alt="Rsschool-logo">
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
